@@ -14,30 +14,25 @@
 
 <!-- atualiza o topo da pagina -->
 
-<div id="viewer-count" style="background-color: purple; text-align: center; color: white; font-size:2em; larger; padding: em;"></div>
+<div id="viewer-count" style="background-color: purple; text-align: center; color: white; font-size: 1em; padding: 1em;"></div>
 
 <script>
   let viewerCount = 400;
+  const date = new Date();
   
   function updateViewerCount() {
-    viewerCount += Math.floor(Math.random() * 3) - 1;
-    if (viewerCount < 0) {
-      viewerCount = 0;
-    }
-    if (viewerCount > 800) {
-      viewerCount = 800;
-    }
-    const date = new Date();
     document.getElementById("viewer-count").innerHTML =
-      viewerCount + " pessoas assistindo esta apresentação em " + date.toLocaleDateString();
+      "Assista até o final, essa apresentação sairá do ar no dia " + date.toLocaleDateString() + ".";
   }
   
-  // Atualize a contagem de espectadores a cada segundo
+  // Update the viewer count every second
   setInterval(updateViewerCount, 1000);
   
-  // Inicialize a contagem de espectadores na página
+  // Initialize the viewer count on the web page
   updateViewerCount();
 </script>
+  
+  
 
     <!-- Título da Página -->
     <title>PROTOCOLO REMOVENDO VARIZES</title>
@@ -90,8 +85,31 @@
 
             <!-- VSL -->
             <div id="vid_63f05ae5214a0a0009c1cffb" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63f05ae5214a0a0009c1cffb" src="https://images.converteai.net/f0da8b40-5a21-4993-bd91-ce9569971fa4/players/63f05ae5214a0a0009c1cffb/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63f05ae5214a0a0009c1cffb" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63f05ae5214a0a0009c1cffb">var s=document.createElement("script");s.src="https://scripts.converteai.net/f0da8b40-5a21-4993-bd91-ce9569971fa4/players/63f05ae5214a0a0009c1cffb/player.js",s.async=!0,document.head.appendChild(s);</script>
+            
 
+            <div id="buyer-count" style="text-align: center;"></div>
 
+<script>
+  let buyerCount = Math.floor(Math.random() * 400) + 400;
+  
+  function updateBuyerCount() {
+    buyerCount += Math.floor(Math.random() * 3) - 1;
+    if (buyerCount < 400) {
+      buyerCount = 400;
+    }
+    if (buyerCount > 800) {
+      buyerCount = 800;
+    }
+    document.getElementById("buyer-count").innerHTML =
+      buyerCount + " Pessoas estão assistindo esse vídeo agora.";
+  }
+  
+  // Atualize a contagem de compradores a cada segundo
+  setInterval(updateBuyerCount, 1000);
+  
+  // Inicialize a contagem de compradores na página
+  updateBuyerCount();
+</script>
             
 
             <!-- Botão 1 -->
