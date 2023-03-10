@@ -505,11 +505,30 @@ nunca mais quero fazer cirurgias.</td>
 
     <footer class="bg-dark py-3 text-center">
       <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+      <p></p>
+        <div style="color: white; text-justify: center;">
+  <p style="text-align: center; font-weight: lighter;">© 2022 – Todos os direitos reservados. Este site não faz parte ou é endossado pelo Facebook. Facebook é uma marca registrada da Facebook, Inc.</p>
+<p></p>
+<div style="color: white; text-justify: center;">
+  <p style="text-align: center; font-weight: lighter;">Os resultados a serem obtidos com a aplicação das técnicas descritas nessa página variam de pessoa para pessoa.</p>
+<p></p>
+<div style="color: white; text-justify: center;">
+  <p style="text-align: center; font-weight: lighter;">Não reivindicamos ou declaramos que ao usar o método, você terá resultados imediatos ou garantidos. Os depoimentos mostrados são de pessoas reais e vão variar com base no seu esforço e no conhecimento adquirido.</p>
     </footer>
 
-    <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 732000); // temporização da Call to Action (em milissegundos)
-    </script>
+   <script>
+  function userHasVisited() {
+    var hasVisited = localStorage.getItem('visited');
+    if (hasVisited) {
+      document.getElementById("cta1").classList.remove("d-none");
+      document.getElementById("cta2").classList.remove("d-none");
+    } else {
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 735000); // temporização da Call to Action (em milissegundos)
+      localStorage.setItem('visited', 'true');
+    }
+  }
+  userHasVisited();
+</script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
